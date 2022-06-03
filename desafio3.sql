@@ -7,4 +7,6 @@ FROM
     JOIN user_history ON user.id = user_history.user_id
     JOIN song ON user_history.song_id = song.id
 GROUP BY
-    `user`.`name`  ORDER BY `user`.`name` ;
+    `user`.`name`
+ORDER BY
+    `user`.`name`;
