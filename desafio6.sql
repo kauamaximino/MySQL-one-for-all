@@ -5,4 +5,4 @@ SELECT
     SUM(plans.value) AS faturamento_total
 FROM
     plans
-    INNER JOIN `user` ON plans.id = user.plan_id;
+    JOIN `user` ON plans.id = user.plan_id;
